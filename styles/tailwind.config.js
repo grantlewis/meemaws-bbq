@@ -6,11 +6,7 @@ module.exports = {
     },
   },
   theme: {
-    extend: {
-      colors: {
-        change: "black",
-      },
-    },
+    extend: {},
   },
   variants: {},
   plugins: [],
