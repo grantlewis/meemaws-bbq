@@ -1,0 +1,45 @@
+{% extends "_includes/default.njk" %}
+
+{% block title %}Memaw's BBQ{% endblock %}
+
+{% block content %}
+  <div class="bg-fixed bg-cover bg-no-repeat text-center text-white text-6xl font-extrabold" style="background-image: url(./img/pit.jpg)">
+    <div>
+    <h1 class="bg-black bg-opacity-50 p-16 py-64">  
+      Real Pit Bar•B•Q
+    </h1>
+    </div>
+  </div>
+  {# <div class="w-screen">
+    <img src="./img/pit.jpg"></img>
+  </div> #}
+  <div class="bg-orange-200 text-gray-800 w-fill p-8 px-32 text-center">
+    <div class="text-2xl pb-6">
+      Memaw's Bar•B•Q welcomes you! 
+    </div>
+    <div class="text-xl">
+      Real Pit Bar•B•Q
+      <br/>
+      cooked over hickory logs
+      <br/>
+      the old fashion way.
+    </div>
+  </div>
+  <div class="flex w-fill">
+    <div class="flex-1 bg-cover bg-center" style="background-image: url(./img/memaws-feast.gif)">
+      <h1 class="bg-black bg-opacity-50 text-center text-white text-6xl font-extrabold py-16">  
+        <a href="/menu">
+          Menu
+        </a>
+      </h1>
+    </div>
+    <div class="flex-1 bg-orange-500 p-16">
+      <div class="text-xl text-gray-800 mb-6">
+        A feast is waiting for you.
+      </div>
+      <button class="bg-gray-800 text-white hover:bg-orange-300 px-6 py-3">
+        View our Menu
+      </button>
+    </div>
+  </div>
+{% endblock %}
