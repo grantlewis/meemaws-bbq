@@ -3,8 +3,17 @@
 {% block title %}Memaw's BBQ{% endblock %}
 
 {% block content %}
-  
   <div class="w-screen">
     Menu
+    {% for section in menu.sections -%}
+      <div>{{section.name}}</div>
+      {% for item in section.items -%}
+        <div>{{item.name}}</div>
+        <div>{{item.description}}</div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <div>
+    <a href="../img/Memaws Breakfast Menu 2018.pdf">Breakfast</a>
   </div>
 {% endblock %}
